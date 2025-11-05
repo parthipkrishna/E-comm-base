@@ -1,0 +1,190 @@
+:root {
+    --textColor: #214842;
+    --teamColor: #F7941D;
+}
+
+/* banner-section css */
+
+.banner-section {
+    margin-top: 90px;
+    background-image: url('images/checkOut/banner-img.webp');
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section h1 {
+    color: var(--textColor);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* contact-section css */
+
+.mob-tabel {
+    display: none;
+}
+
+.contact-section h2 {
+    color: var(--textColor);
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.contact-section p {
+    color: #556260;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.80px;
+}
+
+.contact-section label {
+    color: #556260;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.contact-section input {
+    background: white;
+    border-radius: 15px;
+    border: 1px #C6C6C6 solid;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.contact-section .firstLast-name {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-section button {
+    background-color: var(--teamColor);
+    padding: 10px 20px;
+    color: #fff;
+    border: 0px;
+    border-radius: 50px;
+}
+
+/* media query starting */
+
+@media all and (max-width:990px) {
+
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 0px;
+        height: 30vh;
+    }
+
+    /* contact form */
+
+    .contact-section .firstLast-name {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media all and (max-width:768px) {
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 60px;
+        height: 25vh;
+    }
+
+    .banner-section h1 {
+        font-size: 24px;
+    }
+
+    /* contact-section css */
+
+    .contact-section {
+        padding: 0px 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        font-size: 16px;
+        line-height: 23.80px;
+    }
+
+    .contact-section label {
+        font-size: 14px;
+    }
+
+    .contact-section input {
+        padding: 8px 15px;
+    }
+
+    .contact-section .firstLast-name {
+        display: block;
+        width: 100%;
+    }
+
+    .contact-section form button {
+        padding: 8px 15px;
+    }
+
+    .web-tabel {
+        display: none;
+    }
+
+    .mob-tabel {
+        display: block;
+    }
+
+    .mob-tabel .product-details {
+        background: #FAFAF5;
+        border-radius: 5px;
+        padding: 15px 10px 10px 10px;
+    }
+
+    .mob-tabel .product-details h3 {
+        color: #214842;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .mob-tabel .product-details h3 span {
+        color: #258F67;
+        font-size: 20px;
+        font-weight: 800;
+    }
+
+    .mob-tabel .product-details p {
+        color: #7D9995;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 3px;
+    }
+
+    .mob-tabel .product-details p span {
+        color: #258F67;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .mob-tabel .product-details h4 {
+        color: #214842;
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    .mob-tabel .product-details h4 span {
+        color: #258F67;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .mob-none {
+        display: none;
+    }
+}

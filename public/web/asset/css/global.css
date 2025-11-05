@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+:root {
+    --textColor: #214842;
+    --teamColor: #F7941D;
+}
+
+/* Navbar section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 15px 100px;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+}
+
+header.sticky {
+    padding: 15px 100px;
+    background-color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+}
+
+header .logo {
+    position: relative;
+    color: var(--textColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+.logo img {
+    width: 189px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.nav__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+}
+
+.nav__item a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #454545;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+.nav__item a.active {
+    color: var(--teamColor) !important;
+}
+
+.nav__item a:hover {
+    color: var(--teamColor);
+}
+
+.nav__link {
+    padding: 10px;
+    color: var(--teamColor);
+    font-weight: 600;
+}
+
+.header__close,
+.header__toggle {
+    display: none;
+}
+
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0rem !important;
+}
+
+.btn-phone {
+    display: none;
+}
+
+header button {
+    background-color: var(--teamColor);
+    color: #fff;
+    font-size: 20px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* pagination css */
+
+.pagination {
+    display: flex;
+}
+
+.pagination a {
+    color: #258F67;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.pagination .underLine {
+    height: 2px;
+    width: 100%;
+    background-color: #258F67;
+}
+
+.pagination p {
+    color: var(--color-grey-36, #556260);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* footer-section css */
+
+.footer-section-phone {
+    display: none;
+}
+
+.footer-section, .footer-section-phone {
+    margin-top: 40px;
+    background-color: #FAFAF5;
+    padding: 50px 0px 20px 0px;
+}
+
+.footer-section .footer-frst-col img, .footer-section-phone .footer-frst-col img {
+    width: 220px;
+    height: 100px;
+    margin-left: -20px;
+}
+
+.footer-section .footer-frst-col p, .footer-section-phone .footer-frst-col p {
+    color: #F7941D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.scroll-hidden-category {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scroll-hidden-category::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.footer-frst-col p {
+    white-space: normal; 
+    word-wrap: break-word;    
+    overflow-wrap: break-word; 
+    }
+.footer-section .socialMedia-icons, .footer-section-phone .socialMedia-icons {
+    display: flex;
+    gap: 13px;
+    padding-top: 20px;
+}
+
+.footer-section .socialMedia-icons i, .footer-section-phone .socialMedia-icons i {
+    color: #000;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.footer-section .socialMedia-icons i:hover, .footer-section-phone .socialMedia-icons i:hover {
+    color: var(--teamColor);
+    transform: 0.3s;
+}
+
+.footer-section h6, .footer-section-phone h6 {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-section .conatct-details, .footer-section-phone .conatct-details {
+    display: flex;
+    gap: 13px;
+}
+
+.footer-section .conatct-details p, .footer-section-phone .conatct-details p {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-section .contact-icons, .footer-section-phone .contact-icons {
+    height: 40px;
+    width: 40px;
+    background-color: #F7941D;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.footer-section .contact-icons i, .footer-section-phone .contact-icons i {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-section ul, .footer-section-phone ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-section ul li, .footer-section-phone ul li {
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.footer-section ul li a, .footer-section-phone ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-section ul li a i, .footer-section-phone ul li a {
+    color: #EFC360;
+}
+
+.footer-section .footer-img, .footer-section-phone .footer-img {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section .footer-img img, .footer-section-phone .footer-img img {
+    height: 78px;
+    width: auto;
+}
+
+/* media query starting */
+
+@media all and (max-width:1440px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 15px 40px;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    header.sticky {
+        padding: 15px 40px;
+        background-color: #fff;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    /* footer section */
+
+    .footer-img {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-img img {
+        height: 65px !important;
+        width: auto !important;
+    }
+}
+
+@media all and (max-width:990px) {
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    header {
+        position: relative;
+        justify-content: space-between;
+        padding: 15px 60px;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #ffffff;
+        font-size: 20px !important;
+        background-color: var(--teamColor);
+        padding: 15px 15px;
+        border-radius: 50px;
+
+    }
+
+    header.sticky .header__toggle {
+        display: inline;
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 70px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #454545;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #FAFAF5;
+        color: #454545;
+        width: 40%;
+        height: 100vh;
+        padding: 40px 0px 0px 0px;
+        z-index: 1000;
+        transition: 0.5s;
+        border-radius: 0 0 0 50%;
+        z-index: 1000;
+        display: block;
+    }
+
+    header.sticky {
+        padding: 15px 60px;
+    }
+
+    header .logo {
+        position: relative;
+        color: var(--textColor);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.6s;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item a {
+        color: #454545;
+    }
+
+    .nav__item {
+        margin: 15px 0;
+    }
+
+    .nav__list a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav__list a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: var(--teamColor);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .btn-web {
+        display: none;
+    }
+
+    .btn-phone {
+        display: block;
+        position: absolute;
+        right: 120px;
+
+    }
+
+    header button {
+        font-size: 20px;
+        height: 45px;
+        width: 45px;
+    }
+
+    /* footer section */
+
+    .footer-section h6 {
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:768px) {
+
+    br {
+        display: none !important;
+    }
+
+    /* navbar css */
+    body {
+        overflow-x: hidden;
+    }
+
+    body.overflow-hidden {
+        overflow: hidden;
+    }
+
+    .logo img {
+        width: 108px;
+        height: 40px;
+        object-fit: contain;
+        margin-left: -10px;
+    }
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .logo a {
+        font-size: 0.9rem;
+    }
+
+    .header__toggle {
+        display: inline;
+        color: #ffffffee;
+        font-size: 18px;
+        display: inline;
+        padding: 8px 8px;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        z-index: 1000;
+        color: #454545;
+        display: none;
+    }
+
+    .nav__item a {
+        color: #454545;
+        margin: 0px !important;
+        font-size: 14px; 
+        font-weight: 600;
+    }
+
+    .nav__link {
+        padding: 10px 10px !important;
+    }
+
+    ol, ul {
+        padding-left: 0rem !important;
+    }
+
+     /* Overlay */
+     .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+      }
+  
+      .overlay.show {
+        display: block;
+      }
+  
+      /* Nav menu */
+      .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #FAFAF5;
+        color: #454545;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 10px 10px 10px;
+        z-index: 1000;
+        transition: right 0.5s ease;
+        border-radius: 5px 0 0 5px;
+      }
+  
+      .nav.show {
+        right: 0;
+      }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0%; 
+        align-items: start; 
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .nav__item {
+        margin: 0px;
+    }
+
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    .btn-phone {
+        display: block;
+        position: absolute;
+        right: 70px;
+    }
+
+    header button {
+        font-size: 18px;
+        height: 40px;
+        width: 40px;
+    }
+
+    /* pagination */
+
+    .pagination {
+        display: none;
+    }
+
+    /* footer-section css */
+
+    .footer-section-phone {
+        display: block;
+    }
+
+    .footer-section {
+        display: none;
+    }
+
+    .footer-section-phone {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .footer-section-phone .footer-frst-col img {
+        width: 108px !important;
+        height: 40px;
+        object-fit: contain;
+        margin-left: -10px
+    }
+
+    .footer-section-phone .footer-frst-col p {
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+
+    .footer-section-phone .socialMedia-icons {
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .footer-section-phone h6 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .footer-section-phone .conatct-details {
+        gap: 8px;
+    }
+
+    .footer-section-phone .conatct-details p {
+        font-size: 12px;
+    }
+
+    .footer-section-phone .contact-icons {
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer-section-phone .contact-icons i {
+        font-size: 12px;
+    }
+
+    .footer-section-phone ul li {
+        margin: 10px 0px;
+    }
+
+    .footer-section-phone ul li a {
+        font-size: 12px;
+    }
+
+    .footer-section-phone .footer-img {
+        gap: 10px;
+        justify-content: left;
+    }
+
+    .footer-section-phone .footer-img img {
+        height: 60px;
+        width: auto;
+    }
+}
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(30, 30, 30, 0.5);
+    z-index: 9999
+}
+
+#status {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -40px 0 0 -40px
+}
+
+@-webkit-keyframes bouncing-loader {
+    to {
+        opacity: .1;
+        -webkit-transform: translate3d(0, -16px, 0);
+        transform: translate3d(0, -16px, 0)
+    }
+}
+
+@keyframes bouncing-loader {
+    to {
+        opacity: .1;
+        -webkit-transform: translate3d(0, -16px, 0);
+        transform: translate3d(0, -16px, 0)
+    }
+}
+
+.bouncing-loader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.bouncing-loader>div {
+    width: 13px;
+    height: 13px;
+    margin: 32px 3px;
+    background: var(--ct-primary);
+    border-radius: 50%;
+    -webkit-animation: bouncing-loader .6s infinite alternate;
+    animation: bouncing-loader .6s infinite alternate
+}
+
+.bouncing-loader>div:nth-child(2) {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    background: #fa5c7c
+}
+
+.bouncing-loader>div:nth-child(3) {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    background: #0acf97
+}

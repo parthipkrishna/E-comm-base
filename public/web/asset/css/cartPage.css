@@ -1,0 +1,146 @@
+:root {
+    --textColor: #214842;
+    --teamColor: #F7941D;
+}
+
+/* banner-section css */
+
+.banner-section {
+    margin-top: 90px;
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section h1 {
+    color: var(--textColor);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* table-section css */
+
+.mob-table {
+    display: none;
+}
+
+.table-section {
+    margin-top: 0px;
+}
+
+.table-section table {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0px !important;
+}
+
+.table-responsive {
+    border-radius: 15px !important;
+    border: 1px #ECECEC solid !important;
+}
+
+thead tr, tbody tr {
+    border-bottom: 1px solid #ECECEC !important;
+}
+
+.table {
+    background: white !important;
+}
+
+tbody, td, tfoot, th, thead, tr {
+    border-style: none !important;
+}
+
+.product-image-cart {
+    height: auto !important;
+    width: 150px !important;
+}
+
+/* media query starting */
+
+@media all and (max-width:990px) {
+
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 0px;
+        height: 30vh;
+    }
+}
+
+@media all and (max-width:768px) {
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 60px;
+        height: 25vh;
+    }
+
+    .banner-section h1 {
+        font-size: 24px;
+    }
+
+    .table-section {
+        display: none;
+    }
+
+    .mob-table {
+        display: block;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .mob-table .card .card-body {
+        display: flex;
+        width: 100% !important;
+        position: relative;
+    }
+
+    .close-btn {
+        position: absolute;
+        right: 15px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .mob-table .card .card-body .product {
+        width: 50% !important;
+    }
+
+    .mob-table .card .card-body .product-datas {
+        width: 50% !important;
+    }
+
+    .mob-table .card .card-body .product-datas h4 {
+        color: var(--textColor);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .mob-table .card .card-body .product-datas p {
+        color: #258F67;
+        font-size: 15px;
+        font-weight: 800;
+    }
+
+    .mob-table h3 {
+        color: var(--textColor) !important;
+        font-size: 22px !important;
+        font-weight: 700 !important;
+    }
+
+    .mob-table h5 {
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .mob-table h6 {
+        color: #258F67;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}

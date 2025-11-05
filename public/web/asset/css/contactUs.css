@@ -1,0 +1,175 @@
+:root {
+    --textColor: #214842;
+    --teamColor: #F7941D;
+}
+
+/* banner-section css */
+
+.banner-section {
+    margin-top: 90px;
+    background-image: url('images/Contacts/banner-img.webp');
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-section h1 {
+    color: var(--textColor);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* contact-section css */
+
+.contact-section h2 {
+    color: var(--textColor);
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.contact-section p {
+    color: #556260;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23.80px;
+}
+
+.contact-section label {
+    color: #556260;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.contact-section input {
+    background: white;
+    border-radius: 15px;
+    border: 1px #C6C6C6 solid;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.contact-section input::placeholder, .contact-section textarea::placeholder {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-section textarea {
+    background: white;
+    border-radius: 15px;
+    border: 1px #C6C6C6 solid;
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.contact-section form button {
+    background-color: var(--teamColor);
+    padding: 10px 20px;
+    color: #fff;
+    border: 0px;
+    border-radius: 50px;
+}
+
+/* map css */
+
+.map-details .socialMedia-icons {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.map-details .socialMedia-icons i {
+    color: #000;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.map-details .socialMedia-icons i:hover {
+    color: var(--teamColor);
+    transform: 0.3s;
+}
+
+.map-details .conatct-details {
+    display: flex;
+    gap: 13px;
+}
+
+.map-details .conatct-details p {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.map-details .contact-icons {
+    height: 40px;
+    width: 40px;
+    background-color: #F7941D;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-details .contact-icons i {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* media query starting */
+
+@media all and (max-width:990px) {
+
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 0px;
+        height: 30vh;
+    }
+}
+
+@media all and (max-width:768px) {
+    /* banner-section css */
+
+    .banner-section {
+        margin-top: 60px;
+        height: 25vh;
+    }
+
+    .banner-section h1 {
+        font-size: 24px;
+    }
+
+    /* contact-section css */
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+    }
+
+    .contact-section label {
+        font-size: 14px;
+    }
+
+    .contact-section input {
+        padding: 10px 15px;
+    }
+
+    .contact-section textarea {
+        padding: 10px 15px;
+    }
+
+    .contact-section form button {
+        padding: 10px 25px;
+    }
+}
